@@ -1,4 +1,4 @@
-function palindromeRearranging(inputString: string): boolean {
+function palindromeRearranging(inputString) {
 
 }
 
