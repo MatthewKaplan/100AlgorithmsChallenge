@@ -1,5 +1,9 @@
 ### Check Out My [YouTube Channel](https://www.YouTube.com/CodingTutorials360)
 
+
+The array has to be constantly increasing from left to right, or it could have 1 mistake. So [1, 3, 2], would pass because although the 2 isn't greater then 3, it is allowed to have 1 mistake. But the array [1, 3, 2, 1], would fail because it has 2 mistakes. 
+
+
 ---
 Given a sequence of integers as an array, determine whether it is possible to obtain a strictly increasing sequence by removing no more than one element from the array.
 
