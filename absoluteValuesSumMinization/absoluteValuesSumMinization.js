@@ -4,10 +4,10 @@ function absoluteValuesSumMinimization(a) {
 
     const isEven = a.length % 2 === 0;
 
-    // We will then write a ternary saying first if it is even,
-    // take the length of a divide it by 2 and subtract one to get
-    // the median number. And if its not even do Math.floor(a.length / 2) 
-    // to get the median number.  
+    /* We will then write a ternary saying first if it is even,
+     take the length of a divide it by 2 and subtract one to get
+     the median number. And if its not even do Math.floor(a.length / 2) 
+     to get the median number.  */
 
     return isEven ? a[a.length / 2 - 1] : a[Math.floor(a.length / 2)]
 }
