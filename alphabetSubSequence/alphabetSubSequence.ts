@@ -1,5 +1,25 @@
 function alphabetSubsequence(s: string): boolean {
 
+  /* First I will take the string (s) that is being passed
+  though the function, split it and store it as chars */
+
+  const chars: string[] = s.split('');
+  const charValues: number[] = [];
+
+  chars.forEach((char: string) => {
+    charValues.push(char.charCodeAt(0))
+  });
+
+  if(new Set(charValues).size !== charValues.length) {
+    return false
+  }
+
+  for(let i=0; i < charValues.length - 1; i++) {
+    if(charValues[i] >= charValues[i+1]) {
+      return false;
+    }
+  }
+  return true;
 }
 
 console.log(alphabetSubsequence('zab'))
